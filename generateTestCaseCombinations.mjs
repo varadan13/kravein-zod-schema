@@ -4,7 +4,7 @@ import path from "path";
 async function saveToJson(data) {
   try {
     const outputDir = "./output";
-    const filePath = path.join(outputDir, "data.json");
+    const filePath = path.join(outputDir, "testCaseCombinations.json");
 
     await fs.mkdir(outputDir, { recursive: true });
 
@@ -50,8 +50,9 @@ for (const allowedFoodOrderServiceTypeSetting of miniObj.allowedFoodOrderService
   }
 }
 
-console.log(temp.length);
+console.log("===============saving test case combinations===============");
+console.log("total combinations =", temp.length);
 
-console.log(temp);
+await saveToJson(temp);
 
-saveToJson(temp);
+console.log("==========================done=============================");

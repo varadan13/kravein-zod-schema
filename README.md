@@ -1,0 +1,5 @@
+run:
+
+```
+node generateTestCaseCombinations.mjs
+```
