@@ -1,0 +1,2 @@
+Test Case ID	Each test case should have a unique ID.
+Test Case Description	Each test case should have a proper description to let testers know what the test case is about.
